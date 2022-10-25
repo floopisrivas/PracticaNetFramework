@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net_Framework_Identity", "N
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{B5BDD526-131C-4A39-B460-D281FD3773DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseContext", "..\DataBaseContext\DataBaseContext.csproj", "{0E94A9A8-6D29-49D2-A101-332F95746672}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{5FAC21DA-392B-44F0-8167-DF9D607AD2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FAC21DA-392B-44F0-8167-DF9D607AD2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FAC21DA-392B-44F0-8167-DF9D607AD2DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E94A9A8-6D29-49D2-A101-332F95746672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E94A9A8-6D29-49D2-A101-332F95746672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E94A9A8-6D29-49D2-A101-332F95746672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E94A9A8-6D29-49D2-A101-332F95746672}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
