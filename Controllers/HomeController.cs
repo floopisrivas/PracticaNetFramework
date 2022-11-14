@@ -8,7 +8,7 @@ namespace NET_Framework.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(bool optional = false)
         {
             return View();
         }
@@ -26,6 +26,15 @@ namespace NET_Framework.Controllers
 
             return View();
         }
+
+        
+        [HttpPost]
+        public ActionResult Adresses()
+        {
+            return RedirectToAction("Index", new { optional = true });
+
+        }
+
 
     }
 }

@@ -128,8 +128,17 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdministrationController.cs" />
     <Compile Include="Controllers\AdressesController.cs" />
+    <Compile Include="Controllers\ClientsController.cs" />
+    <Compile Include="Controllers\CompaniesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\RolsController.cs" />
+    <Compile Include="Controllers\SalesController.cs" />
+    <Compile Include="Controllers\SalesLinesController.cs" />
+    <Compile Include="Controllers\StocksController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -143,9 +152,34 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\dotnet-logo.svg" />
+    <Content Include="Content\Images\net-logo.svg" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\slick.css" />
+    <Content Include="css\templatemo-style.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\clientes.png" />
+    <Content Include="img\compra.png" />
+    <Content Include="img\direccion.jpg" />
+    <Content Include="img\Empresa.JPG" />
+    <Content Include="img\home-img-1.jpg" />
+    <Content Include="img\home-img-2.jpg" />
+    <Content Include="img\Prod001.jpg" />
+    <Content Include="img\Prod002.jpg" />
+    <Content Include="img\Prod003.jpg" />
+    <Content Include="img\Productos.jpeg" />
+    <Content Include="img\robot.jpg" />
+    <Content Include="img\rol.jpg" />
+    <Content Include="img\Sales.jpg" />
+    <Content Include="img\SalesLine.jpg" />
+    <Content Include="img\stock.JPG" />
+    <Content Include="img\tm-astro-bg.jpg" />
+    <Content Include="img\usuario.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-3.5.1.min.js" />
+    <Content Include="js\slick.js" />
+    <Content Include="js\templatemo-script.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -169,6 +203,9 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include=".vs\NET_Framework\config\applicationhost.config" />
+    <Content Include=".vs\NET_Framework\DesignTimeBuild\.dtbcache.v2" />
+    <Content Include=".vs\slnx.sqlite" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
     <Content Include="Scripts\jquery-3.5.1.min.js" />
@@ -253,6 +290,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="video\gfp-astro-timelapse.mp4" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -282,8 +320,51 @@
     <Content Include="Views\Adresses\Details.cshtml" />
     <Content Include="Views\Adresses\Edit.cshtml" />
     <Content Include="Views\Adresses\Index.cshtml" />
+    <Content Include="Views\Companies\Create.cshtml" />
+    <Content Include="Views\Companies\Delete.cshtml" />
+    <Content Include="Views\Companies\Details.cshtml" />
+    <Content Include="Views\Companies\Edit.cshtml" />
+    <Content Include="Views\Companies\Index.cshtml" />
+    <Content Include="Views\Products\Create.cshtml" />
+    <Content Include="Views\Products\Delete.cshtml" />
+    <Content Include="Views\Products\Details.cshtml" />
+    <Content Include="Views\Products\Edit.cshtml" />
+    <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Stocks\Create.cshtml" />
+    <Content Include="Views\Stocks\Delete.cshtml" />
+    <Content Include="Views\Stocks\Details.cshtml" />
+    <Content Include="Views\Stocks\Edit.cshtml" />
+    <Content Include="Views\Stocks\Index.cshtml" />
+    <Content Include="Views\Administration\Index.cshtml" />
+    <Content Include="Views\Sales\Create.cshtml" />
+    <Content Include="Views\Sales\Delete.cshtml" />
+    <Content Include="Views\Sales\Details.cshtml" />
+    <Content Include="Views\Sales\Edit.cshtml" />
+    <Content Include="Views\Sales\Index.cshtml" />
+    <Content Include="Views\SalesLines\Create.cshtml" />
+    <Content Include="Views\SalesLines\Delete.cshtml" />
+    <Content Include="Views\SalesLines\Details.cshtml" />
+    <Content Include="Views\SalesLines\Edit.cshtml" />
+    <Content Include="Views\SalesLines\Index.cshtml" />
+    <Content Include="Views\Rols\Create.cshtml" />
+    <Content Include="Views\Rols\Delete.cshtml" />
+    <Content Include="Views\Rols\Details.cshtml" />
+    <Content Include="Views\Rols\Edit.cshtml" />
+    <Content Include="Views\Rols\Index.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Clients\Create.cshtml" />
+    <Content Include="Views\Clients\Delete.cshtml" />
+    <Content Include="Views\Clients\Details.cshtml" />
+    <Content Include="Views\Clients\Edit.cshtml" />
+    <Content Include="Views\Clients\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include=".vs\NET_Framework\v16\" />
+    <Folder Include=".vs\PracticaNetFramework1\v16\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

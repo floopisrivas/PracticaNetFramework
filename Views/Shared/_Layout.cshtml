@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    <title>@ViewBag.Title - Techinicial ¡Nolog App!</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
@@ -13,9 +13,10 @@
 <body>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#">
-                <img src="~/Content/Images/dotnet-logo.svg" width="30" height="30" alt="">
-                NET Framework
+            <a class="navbar-brand" href="~/Home">
+                <img src="~/Content/Images/net-logo.svg" width="40" height="40" alt="">
+                <b>Techinicial</b>
+                ¡Nolog <b>App!</b>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,27 +28,36 @@
                         @Html.ActionLink("Inicio", "Index", "Home", new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        @Html.ActionLink("Acerca de", "About", "Home", new { @class = "nav-link" })
+                        @Html.ActionLink("Productos", "Index", "Products", "Products", new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        @Html.ActionLink("Contacto", "Contact", "Home", new { @class = "nav-link" })
+                        @Html.ActionLink("Sobre Nosotros", "Contact", "Home", new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        @Html.ActionLink("Dirección", "Index", "Adresses", new { @class = "nav-link" })
+                        @Html.ActionLink("Configuración Empresa", "Index", "Companies", "Companies", new { @class = "nav-link" })
                     </li>
+
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
+                @*<form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>*@
+
+                <form class="form-inline my-2 my-lg-0">
+                    <a class="navbar-brand" href="~/SalesLines/Create">
+                        <img src="~/img/compra.png" width="60" height="60" alt="">
+                    </a>
                 </form>
+
             </div>
         </nav>
     </div>
+    <br />
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET - Rivas Florencia</p>
         </footer>
     </div>
 
